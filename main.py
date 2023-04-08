@@ -12,7 +12,7 @@ list1 = [10, 3, 5, 8, -1, 88, 1345, 3, 45]
 quick_sort(list1)
 print(list1)
 
-# Сортировка слияния
+# Сортировка слиянием
 def merge_sort(nums):
     if len(nums) > 1:
         mid = len(nums) // 2
