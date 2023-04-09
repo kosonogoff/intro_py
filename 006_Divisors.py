@@ -2,11 +2,18 @@
 # Для каждого делителя укажите чётный он или нечётный
 # 10 -> 10 (чётный), 5(нечётный), 2 (чётный), 1(нечётный)
 
-number = int(input('Введите целое число: '))
+def even(number):
+    if number % 2 == 0:
+        return 'чётное'
+    else:
+        return 'нечётное'
+    
 
-for i in range(1, number + 1):
-    if number % i == 0:
-        if i % 2 == 0:
-            print(f'{i} - чётное')
-        else:
-            print(f'{i} - нечётное')
+def divisors():
+    number = int(input('Введите целое число: '))
+
+    for i in range(1, number + 1):
+        if number % i == 0:
+            print(f'{i} - {even(i)}')
+
+divisors()
