@@ -6,7 +6,7 @@ import random
 
 length = random.randint(5, 15)
 
-
+# метод для генерации (в строке 20 более компактный вариант)
 def generate_list(length):
     numbers = [0] * length
 
