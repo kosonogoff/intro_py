@@ -8,7 +8,7 @@ number = int(input('Введите целое число: '))
 if number < 0:
     print('Вы ввели отрицательное число')
 
-if number > 0 and number < 2:
+elif number > 0 and number < 2:
     print('Вы ввели слишком маленькое число')
 
 else:
