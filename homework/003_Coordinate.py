@@ -7,14 +7,14 @@ number = int(input('Введите цифру номера четверти: '))
 if number < 1 or number > 4:
     print('Вы ввели несуществующее значение')
 
-if number == 1:
+elif number == 1:
     print(f'В четверти {number} возможны координаты, где X > 0 и Y > 0')
 
-if number == 2:
+elif number == 2:
     print(f'В четверти {number} возможны координаты, где X < 0 и Y > 0')
 
-if number == 3:
+elif number == 3:
     print(f'В четверти {number} возможны координаты, где X < 0 и Y < 0')
 
-if number == 4:
+elif number == 4:
     print(f'В четверти {number} возможны координаты, где X > 0 и Y < 0')
