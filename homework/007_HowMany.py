@@ -3,6 +3,8 @@
 
 string_first = input('Введите первую строку: ').lower()
 string_second = input('Введите вторую строку: ').lower()
+length_first = len(string_first)
+length_second = len(string_second)
 
 def how_many(string, symbol):
     count = 0
@@ -19,4 +21,8 @@ def print_symbol(one, two):
         print(f'Символ "{one[index]}" во второй строке встречается {(how_many(two, one[index]))} раз(а)')
         index += 1
 
-print_symbol(string_first, string_second)
+if length_first < length_second:
+    print_symbol(string_first, string_second)
+
+else:
+    print_symbol(string_second, string_first)
