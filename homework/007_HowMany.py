@@ -1,7 +1,7 @@
 # Даны две строки. Посчитайте сколько раз каждый символ первой строки встречается во второй
 # «one» «onetwonine» - o – 2, n – 3, e – 2
 
-string_first = input('Введите превую строку: ').lower()
+string_first = input('Введите первую строку: ').lower()
 string_second = input('Введите вторую строку: ').lower()
 
 def how_many(string, symbol):
